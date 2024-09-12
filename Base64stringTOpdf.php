@@ -58,8 +58,6 @@ if (isset($data['base64string'])) {
         $data['base64string'],
         $file_name
     );
-
-    // ส่ง response กลับไปในรูปแบบ JSON
     if ($result) {
         echo json_encode(["message" => "File uploaded successfully", "file_name" => $file_name, "bytes" => $result]);
     } else {
@@ -67,6 +65,5 @@ if (isset($data['base64string'])) {
     }
 
 } else {
-    // ส่ง response error หากข้อมูล JSON ไม่ครบ
     echo json_encode(["message" => "Invalid input"]);
 }
