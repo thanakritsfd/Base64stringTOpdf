@@ -1,6 +1,5 @@
 <?php
-
-// อนุญาตให้ cross-origin requests
+// อนุญาตให้ cross-origin requests หมายความว่า ให้ Domain ไหนสามารถ Request ได้บ้าง ในที่นี้ใส่ * คือได้ทั้งหมด
 header("Access-Control-Allow-Origin: *");
 // กำหนด content type เป็น JSON
 header("Content-Type: application/json; charset=UTF-8");
