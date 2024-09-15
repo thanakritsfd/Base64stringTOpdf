@@ -38,7 +38,6 @@
                 processData: false, // ควรตั้งค่าเป็น false เมื่อใช้ FormData
                 success: function(data) {
                     console.log("Response from PHP: ", data); // ตรวจสอบข้อมูลที่ได้รับจาก PHP
-                    alert(data); // แสดงข้อมูล Base64 ใน alert
                     $("#Base64string").val(data); // แสดงข้อมูล Base64 ใน textarea
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
